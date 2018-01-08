@@ -606,7 +606,7 @@ model.set_weights(final_wts)
 
 print dist_type
 print model_type
-print IN_dat.blur_std
+# print IN_dat.blur_std
 
 
 # test trained model
