@@ -337,8 +337,7 @@ for ly_id in range(5):
     ax.plot(IN_awgn_std,cifar_dist[0,2,:],'-v',markersize=8,markerfacecolor=str(colors[2]),markeredgecolor='k',color=str(colors[2]),label='top 50%',linewidth = 3)
     ax.plot(IN_awgn_std,cifar_dist[0,3,:],'-p',markersize=8,markerfacecolor=str(colors[3]),markeredgecolor='k',color=str(colors[3]),label='top 75%',linewidth = 3)
     ax.plot(IN_awgn_std,cifar_dist[0,4,:],'-h',markersize=8,markerfacecolor=str(colors[4]),markeredgecolor='k',color=str(colors[4]),label='top 90%',linewidth = 3)
-    # ax.axis('off')
-    ax.set_yticklabels([])
+
     ax.set_title('Imagenet: AWGN layer '+str(ly_id+1),fontsize=10)
     ax.title.set_position([0.5, 1.0])
     ax.set_xlabel('$\it{\sigma_n}$')
