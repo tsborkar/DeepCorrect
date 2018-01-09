@@ -7,11 +7,12 @@ In recent years, the widespread use of deep neural networks (DNNs) has facilitat
 A complete description of *DeepCorrect* can be found in an [arXiv tech report](https://arxiv.org/abs/1705.02406).
 
 
-              2-dimensional t-SNE embedding of baseline AlexNet DNN features for ImageNet object classes :
+   **2-dimensional t-SNE embedding of baseline AlexNet DNN features for ImageNet object classes :**
 
 ![baseline AlexNet](https://github.com/tsborkar/DeepCorrect/blob/master/eps_fig/Fig3_1.png)
 
-                 2-dimensional t-SNE embedding of DeepCorrect features for ImageNet object classes :
+
+   **2-dimensional t-SNE embedding of DeepCorrect features for ImageNet object classes :**
 
 ![baseline AlexNet](https://github.com/tsborkar/DeepCorrect/blob/master/eps_fig/Fig15_1.png)
 
