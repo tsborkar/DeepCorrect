@@ -119,6 +119,12 @@ sh get_Imagenet_models.sh
 
 After execution, the ```Imagenet_models``` folder will be populated with finetuned models as well as models of all *DeepCorrect* architectures ( CW, lite, bottleneck), for Gaussian blur and AWGN.
 
+## Runnning *DeepCorrect*
+
+#### Correction priority 
+
+
+
 
 
    
