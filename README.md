@@ -75,9 +75,25 @@ If you use *DeepCorrect* in your research, please consider citing:
 A complete description of the results and the corresponding experimental setup can be found
 in the [arXiv tech report](https://arxiv.org/abs/1705.02406).
 
+
 ## Installing *DeepCorrect*
 
 This repo provides a python-based implementation for *DeepCorrect* using the deep learning library Keras and a Theano backend.
+
+#### Prerequisites
+- [Theano](http://deeplearning.net/software/theano_versions/0.9.X/)  (tested with 0.9.0)
+- [Keras](https://keras.io/) (tested with 1.2.1)
+- [h5py](http://www.h5py.org/) 
+- [numpy](http://www.numpy.org/)
+- [OpenCV](https://github.com/opencv/opencv) (tested with 3.1.0)
+- [convnet-keras](https://github.com/heuritech/convnets-keras) (needed only for AlexNet/ ImageNet model)
+- [MATLAB] (needed only for organizing ImageNet image files)
+
+#### Install *DeepCorrect*
+Get the *DeepCorrect* source code by cloning the repository :
+```
+git clone
+```
 
 
 
