@@ -75,6 +75,11 @@ If you use *DeepCorrect* in your research, please consider citing:
 A complete description of the results and the corresponding experimental setup can be found
 in the [arXiv tech report](https://arxiv.org/abs/1705.02406).
 
+## Installing *DeepCorrect*
+
+This repo provides a python-based implementation for *DeepCorrect* using the deep learning library Keras and a Theano backend.
+
+
 
 
    
