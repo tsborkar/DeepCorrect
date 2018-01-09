@@ -87,12 +87,12 @@ This repo provides a python-based implementation for *DeepCorrect* using the dee
 - [numpy](http://www.numpy.org/)
 - [OpenCV](https://github.com/opencv/opencv) (tested with 3.1.0)
 - [convnet-keras](https://github.com/heuritech/convnets-keras) (needed only for AlexNet/ ImageNet model)
-- [MATLAB] (needed only for organizing ImageNet image files)
+- MATLAB (needed only for organizing ImageNet image files)
 
 #### Install *DeepCorrect*
 Get the *DeepCorrect* source code by cloning the repository :
 ```
-git clone
+git clone https://github.com/tsborkar/DeepCorrect.git
 ```
 
 
