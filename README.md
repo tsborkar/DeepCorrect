@@ -100,6 +100,24 @@ Get the *DeepCorrect* source code by cloning the repository :
 git clone https://github.com/tsborkar/DeepCorrect.git
 ```
 
+#### Setting up ImageNet (ILSVRC2012) validation and training data
+1. Change to *DeepCorrect* source directory: ``` cd DeepCorrect ```
+2. Create folders for training and validation data ``` mkdir Training ILSVRC_data ```
+3. Download [ILSVRC2012](http://image-net.org/challenges/LSVRC/2012/index) training and validation data files
+4. Extract validation set files to ```ILSVRC_data``` folder and training set files to ```Training``` folder respectively.
+5. Change to ```misc``` folder in the ```DeepCorrect``` source directory: ``` cd DeepCorrect/misc ```
+6. Start MATLAB ```matlab``` and run ```ILSVRC_data_org.m```
+```
+>> ILSVRC_data_org
+```
+
+#### Downloading pre-computed ImageNet models
+Due to the large size of ImageNet models, both the finetuned models as well as various trained *DeepCorrect* models need to be downloaded from an external source. To download these models run the bash script ``` get_Imagenet_models.sh``` file from the source ```DeepCorrect``` folder.
+```
+sh get_Imagenet_models.sh
+```
+
+After execution, the ```Imagenet_models``` folder will be populated with finetuned models as well as models of all *DeepCorrect* architectures ( CW, lite, bottleneck), for Gaussian blur and AWGN.
 
 
 
