@@ -85,6 +85,9 @@ in the [arXiv tech report](https://arxiv.org/abs/1705.02406).
 
 This repo provides a python-based implementation for *DeepCorrect* using the deep learning library Keras and a Theano backend.
 
+**Note**: The current version of code does not support a Tensorflow backend.
+
+
 #### Prerequisites
 - [Theano](http://deeplearning.net/software/theano_versions/0.9.X/)  (tested with 0.9.0)
 - [Keras](https://keras.io/) (tested with 1.2.1)
@@ -121,7 +124,55 @@ After execution, the ```Imagenet_models``` folder will be populated with finetun
 
 ## Runnning *DeepCorrect*
 
-#### Correction priority 
+### Correction priority 
+To compute correction priorities for pre-trained DNN models, set ```filter_ranked = 0``` in ```cifar_layer_swap.py``` (CIFAR-100) or ```alexnet_imagenet_layer_swap.py``` (ImageNet) and run it.
+``` 
+python cifar_src/cifar_layer_swap.py
+```
+or
+``` 
+python Imagenet_src/alexnet_imagenet_layer_swap.py
+```
+
+**Note**: Computing correction priority requires local disk space upto 50GB as feature maps for all layers of the pre-trained DNN need to be stored. Depending on the size of the validation set used, this may take a while.
+
+To use pre-computed correction priorities and plot accuracies for correcting various percentages of filters in a pre-trained DNN's layers, set ```filter_ranked = 1``` in ```cifar_layer_swap.py``` (CIFAR-100) or ```alexnet_imagenet_layer_swap.py``` (ImageNet) and run it.
+``` 
+python cifar_src/cifar_layer_swap.py
+```
+or
+``` 
+python Imagenet_src/alexnet_imagenet_layer_swap.py
+```
+   **Top-1 accuracy for correcting various percentages of filters**
+![ideal_corr](https://github.com/tsborkar/DeepCorrect/blob/master/eps_fig/gen_layer_corr.png)
+
+
+### Training and testing *DeepCorrect* models
+
+For testing pre-computed *DeepCorrect* models, set ```num_epoch = 0``` in ```cifar_10_100_deepcorr_tr.py``` (CIFAR-100) or ```imagenet_tr_alexnet.py``` and run it.
+
+``` 
+python cifar_src/cifar_10_100_deepcorr_tr.py
+```
+or
+``` 
+python Imagenet_src/imagenet_tr_alexnet.py
+```
+
+For training *DeepCorrect* models, set ```num_epoch > 0``` in ```cifar_10_100_deepcorr_tr.py``` (CIFAR-100) or ```imagenet_tr_alexnet.py``` and run it.
+
+``` 
+python cifar_src/cifar_10_100_deepcorr_tr.py
+```
+or
+``` 
+python Imagenet_src/imagenet_tr_alexnet.py
+```
+**Note**: In my experiments, ```num_epoch``` was set to 40 for CIFAR-100 and 50 for ImageNet.
+
+
+
 
 
 
