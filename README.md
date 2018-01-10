@@ -10,7 +10,7 @@ A complete description of *DeepCorrect* can be found in an [arXiv tech report](h
    **2-dimensional t-SNE embedding of baseline AlexNet DNN features for ImageNet object classes :**
    
 
-![baseline AlexNet](https://github.com/tsborkar/DeepCorrect/blob/master/eps_fig/Fig3_1.png)
+   ![baseline AlexNet](https://github.com/tsborkar/DeepCorrect/blob/master/eps_fig/Fig3_1.png)
 
 
 
@@ -18,9 +18,13 @@ A complete description of *DeepCorrect* can be found in an [arXiv tech report](h
    **2-dimensional t-SNE embedding of DeepCorrect features for ImageNet object classes :**
 
 
-![baseline AlexNet](https://github.com/tsborkar/DeepCorrect/blob/master/eps_fig/Fig15_1.png)
+  ![baseline AlexNet](https://github.com/tsborkar/DeepCorrect/blob/master/eps_fig/Fig15_1.png)
 
 
+   **Deep neural network architectures :**
+
+
+  ![model_arch](https://github.com/tsborkar/DeepCorrect/blob/master/eps_fig/model_fig.png)
 
 
 
