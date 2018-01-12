@@ -81,6 +81,17 @@ If you use *DeepCorrect* in your research, please consider citing:
 |  Finetuning    |    60.94 M       |   1.38 M    |
 | *DeepCorrect*  |      2.81 M      |     0.89 M  |
 
+
+#### Accelerating training
+
+   ImageNet validation set accuracy vs. training iterations
+
+
+  ![train_time](https://github.com/tsborkar/DeepCorrect/blob/master/eps_fig/training_times.png)
+
+
+
+
 A complete description of the results and the corresponding experimental setup can be found
 in the [arXiv tech report](https://arxiv.org/abs/1705.02406).
 
@@ -93,6 +104,7 @@ This repo provides a python-based implementation for *DeepCorrect* using the dee
 
 
 #### Prerequisites
+- [Python-2.7](https://www.python.org/download/releases/2.7/) (tested with 2.7.12)
 - [Theano](http://deeplearning.net/software/theano_versions/0.9.X/)  (tested with 0.9.0)
 - [Keras](https://keras.io/) (tested with 1.2.1)
 - [h5py](http://www.h5py.org/) 
