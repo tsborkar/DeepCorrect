@@ -22,6 +22,9 @@ A complete description of *DeepCorrect* can be found in an [arXiv tech report](h
 
 
    **Deep neural network architectures :**
+   
+   Convolution layers in the *DeepCorrect* models, shown in gray with dashed outlines, are nontrainable layers and their weights are kept the same as those of the baseline models trained on undistorted images. 
+  
 
 
   ![model_arch](https://github.com/tsborkar/DeepCorrect/blob/master/eps_fig/model_fig.png)
