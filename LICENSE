@@ -20,6 +20,13 @@ furnished to do so, subject to the following conditions:
 3. The Image, Video, and Usability Laboratory (IVU Lab, http://ivulab.asu.edu) 
    is acknowledged in any publication that reports research results using this code, 
    copies of this code, or modifications of this code. 
+   
+The code and our papers are to be cited in the bibliography as:
+Paper
+T. Borkar and L. Karam, "DeepCorrect: Correcting DNN models against Image Distortions," arXiv:1705.02406, 2017. 
+
+Code 
+https://github.com/tsborkar/DeepCorrect/
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
