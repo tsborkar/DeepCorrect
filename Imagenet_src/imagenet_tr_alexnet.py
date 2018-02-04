@@ -545,7 +545,7 @@ for e in range(start_epoch,num_epoch):
     print '--------------------------------------------------------------Iteration :--------------------------------------------------------------------- \n' + str((e + 1))
     print 'Learning rate : ' + str(K.get_value(model.optimizer.lr))
     t1 = time.time()
-    model.fit_generator(source_gen,iter_mult*batch_size,1,verbose=1,nb_worker=20,pickle_safe=True)
+    model.fit_generator(source_gen,iter_mult*batch_size,1,verbose=1,nb_worker=10)
 #
 
     val_acc_1, val_acc_5 = compute_validation_acc(model,dist_type)
