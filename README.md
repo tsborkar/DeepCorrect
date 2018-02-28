@@ -91,8 +91,17 @@ If you use *DeepCorrect* in your research, please consider citing:
 
 
   ![train_time](https://github.com/tsborkar/DeepCorrect/blob/master/eps_fig/training_times.png)
+  
+#### Qualitative evaluation for ImageNet images
+
+   SSIM vs. Filter index
 
 
+  ![ssim](https://github.com/tsborkar/DeepCorrect/blob/master/eps_fig/ssim-crop.png)
+  
+   PSNR vs. Filter index
+
+  ![psnr](https://github.com/tsborkar/DeepCorrect/blob/master/eps_fig/psnr-crop.png)
 
 
 A complete description of the results and the corresponding experimental setup can be found
