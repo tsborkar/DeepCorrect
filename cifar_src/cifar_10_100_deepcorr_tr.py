@@ -252,7 +252,7 @@ test_acc = np.empty(7,np.float32)
 # raw_input('press enter to continue ')
 #
 
-X_test1 = X_test
+X_test1 = X_test.copy()
 X_test1[:,0,:,:] -= mean_r
 X_test1[:,1,:,:] -= mean_g
 X_test1[:,2,:,:] -= mean_b
