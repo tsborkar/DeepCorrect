@@ -96,13 +96,7 @@ std_b = np.std(X_train1[:,2,:,:])
 X_train1 = X_train1[perm_ids,:,:,:]
 
 
-X_test[:,0,:,:] -= mean_r
-X_test[:,1,:,:] -= mean_g
-X_test[:,2,:,:] -= mean_b
 
-X_test[:,0,:,:] /= std_r
-X_test[:,1,:,:] /= std_g
-X_test[:,2,:,:] /= std_b
 #
 
 y_train1 = y_train1[perm_ids]
@@ -257,8 +251,17 @@ test_acc = np.empty(7,np.float32)
 # print Y_test.shape
 # raw_input('press enter to continue ')
 #
-test_acc[0]= CIFAR_acc.compute_test_accuracy(model, X_test, Y_test)
-# del X_test
+
+X_test1 = X_test
+X_test1[:,0,:,:] -= mean_r
+X_test1[:,1,:,:] -= mean_g
+X_test1[:,2,:,:] -= mean_b
+
+X_test1[:,0,:,:] /= std_r
+X_test1[:,1,:,:] /= std_g
+X_test1[:,2,:,:] /= std_b
+test_acc[0]= CIFAR_acc.compute_test_accuracy(model, X_test1, Y_test)
+del X_test1
 
 for iter_id in range(6):
     X_test1 = np.empty((Y_test.shape[0], 3, img_width, img_height), np.float32)
@@ -273,7 +276,13 @@ for iter_id in range(6):
         X_test1[samp_id,:] = np.copy(img_temp)
         del img_temp
 
+    X_test1[:,0,:,:] -= mean_r
+    X_test1[:,1,:,:] -= mean_g
+    X_test1[:,2,:,:] -= mean_b
 
+    X_test1[:,0,:,:] /= std_r
+    X_test1[:,1,:,:] /= std_g
+    X_test1[:,2,:,:] /= std_b
     test_acc[1+iter_id] = CIFAR_acc.compute_test_accuracy(model, X_test1,Y_test)
     del X_test1
 
