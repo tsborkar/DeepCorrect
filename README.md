@@ -10,7 +10,7 @@ A complete description of *DeepCorrect* can be found in our journal paper [IEEE 
    **2-dimensional t-SNE embedding of baseline AlexNet DNN features for ImageNet object classes :**
    
 
-   ![baseline AlexNet](https://github.com/tsborkar/DeepCorrect/blob/master/eps_fig/Fig3_1.png)
+   ![baseline AlexNet](https://github.com/tsborkar/DeepCorrect_archive/blob/master/eps_fig/Fig3_1.png)
 
 
 
@@ -18,7 +18,7 @@ A complete description of *DeepCorrect* can be found in our journal paper [IEEE 
    **2-dimensional t-SNE embedding of DeepCorrect features for ImageNet object classes :**
 
 
-  ![baseline AlexNet](https://github.com/tsborkar/DeepCorrect/blob/master/eps_fig/Fig15_1.png)
+  ![baseline AlexNet](https://github.com/tsborkar/DeepCorrect_archive/blob/master/eps_fig/Fig15_1.png)
 
 
    **Deep neural network architectures :**
@@ -27,7 +27,7 @@ A complete description of *DeepCorrect* can be found in our journal paper [IEEE 
   
 
 
-  ![model_arch](https://github.com/tsborkar/DeepCorrect/blob/master/eps_fig/model_fig.png)
+  ![model_arch](https://github.com/tsborkar/DeepCorrect_archive/blob/master/eps_fig/model_fig.png)
 
 
 
@@ -90,18 +90,18 @@ If you use *DeepCorrect* in your research, please consider citing:
    ImageNet validation set accuracy vs. training iterations
 
 
-  ![train_time](https://github.com/tsborkar/DeepCorrect/blob/master/eps_fig/training_times.png)
+  ![train_time](https://github.com/tsborkar/DeepCorrect_archive/blob/master/eps_fig/training_times.png)
   
 #### Qualitative evaluation for ImageNet images
 
    SSIM vs. Filter index
 
 
-  ![ssim](https://github.com/tsborkar/DeepCorrect/blob/master/eps_fig/ssim-crop.png)
+  ![ssim](https://github.com/tsborkar/DeepCorrect_archive/blob/master/eps_fig/ssim-crop.png)
   
    PSNR vs. Filter index
 
-  ![psnr](https://github.com/tsborkar/DeepCorrect/blob/master/eps_fig/psnr-crop.png)
+  ![psnr](https://github.com/tsborkar/DeepCorrect_archive/blob/master/eps_fig/psnr-crop.png)
 
 
 A complete description of the results and the corresponding experimental setup can be found
@@ -173,7 +173,7 @@ or
 python Imagenet_src/alexnet_imagenet_layer_swap.py
 ```
    **Top-1 accuracy for correcting various percentages of filters**
-![ideal_corr](https://github.com/tsborkar/DeepCorrect/blob/master/eps_fig/gen_layer_corr.png)
+![ideal_corr](https://github.com/tsborkar/DeepCorrect_archive/blob/master/eps_fig/gen_layer_corr.png)
 
 
 ### Training and testing *DeepCorrect* models
