@@ -142,12 +142,7 @@ git clone https://github.com/tsborkar/DeepCorrect.git
 ```
 
 #### Downloading pre-computed ImageNet models
-Due to the large size of ImageNet models, both the finetuned models as well as various trained *DeepCorrect* models need to be downloaded from an external source. To download these models run the bash script ``` get_Imagenet_models.sh``` file from the source ```DeepCorrect``` folder.
-```
-sh get_Imagenet_models.sh
-```
-
-After execution, the ```Imagenet_models``` folder will be populated with finetuned models as well as models of all *DeepCorrect* architectures ( CW, lite, bottleneck), for Gaussian blur and AWGN.
+Due to the large size of ImageNet models, both the finetuned models as well as various trained *DeepCorrect* models need to be downloaded from an external source. ImageNet finetuned models as well as models of all *DeepCorrect* architectures ( CW, lite, bottleneck), for Gaussian blur and AWGN can be downloaded from [here](https://drive.google.com/file/d/1y7zAdwlrWW0P6qV11eyu7EGQxlejzyzE/view?usp=sharing).
 
 ## Runnning *DeepCorrect*
 
